@@ -65,6 +65,9 @@
  * certified NMEA200 devices. 
  */
 // #define N2K_NO_GROUP_FUNCTION_SUPPORT 1      //Uncomment as needed
+#define N2K_NO_GROUP_FUNCTION_SUPPORT 1      // uncomment because of issue with 
+// tN2kGroupFunctionHandler::tN2kGroupFunctionHandler(tNMEA2000 *_pNMEA2000, unsigned long _PGN)  {
+//  pNext=0; -> Hard fault
 
 /***********************************************************************//**
  * \brief Deactivation Heatbeat Support
